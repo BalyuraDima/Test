@@ -1,0 +1,5 @@
+<map id="AverageCalculation" name="AverageCalculation">
+<area shape="rect" id="node1" title="Функция расчета средних значений, вызывается из прерывания по готовности данных" alt="" coords="5,5,137,31"/>
+<area shape="rect" id="node2" href="$main_8c.html#a35a483de1c773d6cd958434372054b8b" title="Функция сброса DMA модуля и настройки количества измерений с адресом массива для сохранения результат..." alt="" coords="185,5,277,31"/>
+<area shape="rect" id="node3" href="$main_8c.html#ae51686736234ec6e47d09ddb3cc8fe78" title="Функция управления DMA модулем" alt="" coords="325,5,424,31"/>
+</map>

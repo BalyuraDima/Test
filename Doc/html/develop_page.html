@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Тест модулей ADC, DMA,TIM2, TIM3(PWM): выполнение задания:</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Тест модулей ADC, DMA,TIM2, TIM3(PWM)
+   </div>
+   <div id="projectbrief">автор Балюра Д.Е.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('develop_page.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">выполнение задания: </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="image">
+<img src="NUCLEO_Set_w_Shadow.jpg" alt=""/>
+</div>
+<p> Проект будет разработан и проверен на отладочной плате NUCLEO-F072RB используя следующие программы:</p><ul>
+<li>STM32CubeMX v.6.5.0</li>
+<li>uVision v.5.36.0.0</li>
+</ul>
+<h1><a class="anchor" id="CubeMX_sec"></a>
+Настройка проекта в генераторе кода STM32CubeMX</h1>
+<p>Настройка проекта в генераторе кода STM32CubeMX представляет собой настройку основных используемых аппаратных модулей. Добавим в проект настройку вывода порта PC3. Данный вывод будем переключаkть в противоположное состояние каждый раз по окончанию передачи данных модулем DMA в массив ADC_Data[100]. </p><div class="image">
+<img src="GPIO.jpg" alt=""/>
+</div>
+<p> На этом настроку модуля GPIO можно считать законченной.<br  />
+ Перейдем к настройке модуля тактирования RCC. </p><div class="image">
+<img src="SYS.jpg" alt=""/>
+</div>
+<p> Разрешим подключение отладчика. Также в качестве базы для отсчетов времени используем системный таймер ядра SysTick. Он понадобится нам при обеспечении отладочного вывода в стандартный файл stdout. </p><div class="image">
+<img src="SYS.jpg" alt=""/>
+</div>
+<p> Переходим к настройке аналоговых модулей, используемых в проекте. </p><div class="image">
+<img src="ADC.jpg" alt=""/>
+</div>
+<p> Для ввода аналогового сигнала используем вход IN0. Настроим запуск АЦП по внешнему событию от таймера TMR2. Тактирование от внутеннего RC-генератора. Также настроим запуск DMA по окончанию преобразования для размещения результата в памяти микроконтроллера. На этом настройку модуля АЦП можно считать законченной. Переходим к настройке модуля ШИМ. </p><div class="image">
+<img src="TIM2.jpg" alt=""/>
+</div>
+<p> Частота тактирования таймера - 48МГц (частота встроенного RC-генератора). Чтобы получить требуемую частоту 5кГц необходимо входную частоту разделить на 9600 -1, так как счет идет с 0. Так же для корректного запуска преобразования модулем АЦП настроим TRGO на события Update Event. Согласно заданию установим использование драйверов соответствующего уровня. </p><div class="image">
+<img src="TIM3.jpg" alt=""/>
+</div>
+<p> По заданию максимальная длительность импульса 20мс, что соответствует максимальному значению АЦП 4095. Зная частоту такстирования таймера 48МГц, расчитаем значение предделителя и периода для указынных значений: 20мс - 4095 x - 1 тик таймера x = 48000000((0.02 * 1) / 4095) = 234.43 Таким образом значение предделителя будет равно 234. Учитывая максимальное значение АЦП равное 4095, установим значение периода в два раза больше 8192 - 1. У модуля ШИМ задействуем 1 канал на линии порта PA6. <br  />
+ Для периодического запуска АЦП с частотой 5кГц, настроим таймер 2 и установим значение тригера на обновления событий. </p>
+<h1><a class="anchor" id="uVision_dev_sec"></a>
+Разработка проекта в среде Keil uVision</h1>
+<p>Проект, помимо файлов драйверов уровней HAL и LL, файлов стандартной библиотеки CMSIS состоит из следующих модулей:</p><ul>
+<li><a class="el" href="main_8c.html">main.c</a></li>
+<li><a class="el" href="">gpio.c</a></li>
+<li><a class="el" href="">adc.c</a></li>
+<li><a class="el" href="">dma.c</a></li>
+<li><a class="el" href="">tim.c</a></li>
+<li><a class="el" href="stm32f0xx__it_8c.html">stm32f0xx_it.c</a></li>
+<li><a class="el" href="system__stm32f0xx_8c.html">system_stm32f0xx.c</a></li>
+<li><a class="el" href="main_8h.html">main.h</a></li>
+<li><a class="el" href="">Модуль АЦП </a></li>
+<li><a class="el" href="">Модуль DMA </a></li>
+<li><a class="el" href="">Модуль таймера </a></li>
+<li><a class="el" href="stdout_8c.html">Модуль перенаправления стандартного вывода stdout </a> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

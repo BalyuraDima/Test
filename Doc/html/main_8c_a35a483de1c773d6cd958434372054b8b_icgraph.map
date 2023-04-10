@@ -1,0 +1,6 @@
+<map id="DMA_Reset" name="DMA_Reset">
+<area shape="rect" id="node1" title="Функция сброса DMA модуля и настройки количества измерений с адресом массива для сохранения результат..." alt="" coords="425,31,517,56"/>
+<area shape="rect" id="node2" href="$main_8c.html#af81daf345b74bf66a161783e96dbfea4" title="Функция расчета средних значений, вызывается из прерывания по готовности данных" alt="" coords="245,5,377,31"/>
+<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Файл содержащий функцию основного цикла." alt="" coords="286,55,337,80"/>
+<area shape="rect" id="node3" href="$stm32f0xx__it_8c.html#a7b6fac3d670a4860ebec8a961d5c4a73" title="This function handles DMA1 channel 1 global interrupt." alt="" coords="5,5,197,31"/>
+</map>

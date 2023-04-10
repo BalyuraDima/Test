@@ -1,0 +1,4 @@
+<map id="DMA_Reset" name="DMA_Reset">
+<area shape="rect" id="node1" title="Функция сброса DMA модуля и настройки количества измерений с адресом массива для сохранения результат..." alt="" coords="5,5,97,31"/>
+<area shape="rect" id="node2" href="$main_8c.html#ae51686736234ec6e47d09ddb3cc8fe78" title="Функция управления DMA модулем" alt="" coords="145,5,244,31"/>
+</map>

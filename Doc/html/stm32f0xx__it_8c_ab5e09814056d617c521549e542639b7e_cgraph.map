@@ -1,0 +1,4 @@
+<map id="SysTick_Handler" name="SysTick_Handler">
+<area shape="rect" id="node1" title="This function handles System tick timer." alt="" coords="5,5,125,31"/>
+<area shape="rect" id="node2" href="$timebase_8c.html#aa8361d44d76b7f6256834f828165837a" title="обработчик прерывания таймера SysTick" alt="" coords="173,5,268,31"/>
+</map>

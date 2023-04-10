@@ -1,0 +1,4 @@
+<map id="AverageCalculation" name="AverageCalculation">
+<area shape="rect" id="node1" title="Функция расчета средних значений, вызывается из прерывания по готовности данных" alt="" coords="245,5,377,31"/>
+<area shape="rect" id="node2" href="$stm32f0xx__it_8c.html#a7b6fac3d670a4860ebec8a961d5c4a73" title="This function handles DMA1 channel 1 global interrupt." alt="" coords="5,5,197,31"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Файл содержащий функцию основного цикла." alt="" coords="5,31,56,56"/>
+<area shape="rect" id="node2" href="$main_8c.html#a35a483de1c773d6cd958434372054b8b" title="Функция сброса DMA модуля и настройки количества измерений с адресом массива для сохранения результат..." alt="" coords="129,5,221,31"/>
+<area shape="rect" id="node4" href="$main_8c.html#a70af21c671abfcc773614a9a4f63d920" title="Конфигурация системных часов." alt="" coords="104,55,247,80"/>
+<area shape="rect" id="node3" href="$main_8c.html#ae51686736234ec6e47d09ddb3cc8fe78" title="Функция управления DMA модулем" alt="" coords="296,5,395,31"/>
+<area shape="rect" id="node5" href="$main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="Эта функция выполняется в случае возникновения ошибки." alt="" coords="295,55,396,80"/>
+</map>

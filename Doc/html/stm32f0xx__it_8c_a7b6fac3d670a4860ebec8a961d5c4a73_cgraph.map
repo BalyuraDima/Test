@@ -1,0 +1,6 @@
+<map id="DMA1_Channel1_IRQHandler" name="DMA1_Channel1_IRQHandler">
+<area shape="rect" id="node1" title="This function handles DMA1 channel 1 global interrupt." alt="" coords="5,5,197,31"/>
+<area shape="rect" id="node2" href="$main_8c.html#af81daf345b74bf66a161783e96dbfea4" title="Функция расчета средних значений, вызывается из прерывания по готовности данных" alt="" coords="245,5,377,31"/>
+<area shape="rect" id="node3" href="$main_8c.html#a35a483de1c773d6cd958434372054b8b" title="Функция сброса DMA модуля и настройки количества измерений с адресом массива для сохранения результат..." alt="" coords="425,5,517,31"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae51686736234ec6e47d09ddb3cc8fe78" title="Функция управления DMA модулем" alt="" coords="565,5,664,31"/>
+</map>
