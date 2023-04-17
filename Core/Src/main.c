@@ -109,7 +109,7 @@ uint8_t i;
 	 sumADC+=ADC_Data[i];
 	AverageValue =sumADC / ADC_NUM_AVERAGE;
 	htim3.Instance->CCR1 = AverageValue;    ///ќбновл€ем значение PWM
-	if(debug_cnt>49)
+	if(debug_cnt>=49)
 	{
 	Uavg = sumU / 50;   ///—читаем среднее за 1 сек
 	DebugReady = true;  ///”станавливаем флаг готовности выдачи данных в терминал
@@ -119,9 +119,8 @@ uint8_t i;
 	else
 	{
 	debug_cnt++;
-	sumU += AverageValue ; //—читаем сумму дл€ расчета среднего за 1 сек
 	}
-		
+		sumU += AverageValue ; //—читаем сумму дл€ расчета среднего за 1 сек
 }
 /* USER CODE END 0 */
 
